@@ -6,6 +6,7 @@ namespace Biblioteca
 {
     public class Libro
     {
+        //commento
         private string _autore;
         private string _titolo;
         private DateTime _dataPubblicazione;
