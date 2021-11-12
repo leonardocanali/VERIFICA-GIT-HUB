@@ -29,13 +29,13 @@ namespace Biblioteca
 
         private void btn_Libri_Click(object sender, RoutedEventArgs e)
         {
-            WindowLibro wl = new WindowLibro(Biblioteca B);
+            WindowLibro wl = new WindowLibro(b);
             wl.ShowDialog();
         }
 
         private void btn_Biblioteca_Click(object sender, RoutedEventArgs e)
         {
-            WindowBiblioteca wb = new WindowBiblioteca(Biblioteca B);
+            WindowBiblioteca wb = new WindowBiblioteca(b);
             wb.ShowDialog();
         }
     }

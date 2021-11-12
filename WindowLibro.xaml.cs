@@ -18,7 +18,7 @@ namespace Biblioteca
     public partial class WindowLibro : Window
     {
         private List<Libro> libri;
-        private Biblioteca biblioteca;
+        Biblioteca biblioteca;
         public WindowLibro(Biblioteca b)
         {
             InitializeComponent();
@@ -28,7 +28,7 @@ namespace Biblioteca
 
         private void btn_Aggiungi_Click(object sender, RoutedEventArgs e)
         {
-            Libro l = new Libro(txt_Autore, txt_Titolo, DateTime.Parse(txt_Data.Text), txt_Editore, int.Parse(txt_pag.Text));
+            Libro l = new Libro(txt_Autore.Text, txt_Titolo.Text, DateTime.Parse(txt_Data.Text), txt_Editore.Text, int.Parse(txt_pag.Text));
             libri = biblioteca.AggiungiLibro(l);
             StampaLibri();
             

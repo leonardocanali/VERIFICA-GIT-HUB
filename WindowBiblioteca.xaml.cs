@@ -17,13 +17,12 @@ namespace Biblioteca
     /// </summary>
     public partial class WindowBiblioteca : Window
     {
-        private Biblioteca biblioteca;
+        Biblioteca biblioteca;
         private List<Libro> libri;
         public WindowBiblioteca(Biblioteca b)
         {
             InitializeComponent();
             biblioteca = b;
-            
         }
 
         private void btn_RicercaPerTirolo_Click(object sender, RoutedEventArgs e)
