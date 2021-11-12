@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="WindowBiblioteca" Height="450" Width="800">
     <Grid>
-        
+        <ListBox x:Name="lst_Ricerche" Margin="37,38,493,37"/>
+        <TextBox x:Name="txt_Ricerca" HorizontalAlignment="Left" Margin="346,38,0,0" Text="RICERCA PER TITOLO" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+        <Button x:Name="btn_RicercaPerTirolo" Content="🔎" HorizontalAlignment="Left" Margin="503,32,0,0" VerticalAlignment="Top" Height="35" Width="35" Click="btn_RicercaPerTirolo_Click"/>
+        <TextBox x:Name="txt_ricercaAutore" HorizontalAlignment="Left" Margin="346,101,0,0" Text="RICERCA PER AUTORE" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+        <Button x:Name="btn_RicercaPerAutore" Content="🔎" HorizontalAlignment="Left" Margin="503,92,0,0" VerticalAlignment="Top" Height="35" Width="35" Click="btn_RicercaPerAutore_Click"/>
+        <Label x:Name="lbl_Libri" Content="NUMERO LIBRI:" HorizontalAlignment="Left" Margin="346,166,0,0" VerticalAlignment="Top" Width="142"/>
+
     </Grid>
 </Window>

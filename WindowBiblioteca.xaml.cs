@@ -17,9 +17,28 @@ namespace Biblioteca
     /// </summary>
     public partial class WindowBiblioteca : Window
     {
-        public WindowBiblioteca()
+        private Biblioteca biblioteca;
+        private List<Libro> libri;
+        public WindowBiblioteca(Biblioteca b)
         {
             InitializeComponent();
+            biblioteca = b;
+            
+        }
+
+        private void btn_RicercaPerTirolo_Click(object sender, RoutedEventArgs e)
+        {
+            Libro libroDaCercare = RicercaPerTitolo(txt.Ricerca.Text);
+            lst_Ricerche.Items.Add(libroDaCercare);
+        }
+
+        private void btn_RicercaPerAutore_Click(object sender, RoutedEventArgs e)
+        {
+            libri = RicercaPerAutore(txt_ricercaAutore.Text);
+            foreach(Libro l in libri)
+            {
+                lst_Ricerche.Items.Add(l);
+            }
         }
     }
 }

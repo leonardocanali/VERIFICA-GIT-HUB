@@ -20,20 +20,22 @@ namespace Biblioteca
     /// </summary>
     public partial class MainWindow : Window
     {
+        Biblioteca b;
         public MainWindow()
         {
             InitializeComponent();
+            b = new Biblioteca("MALATESTIANA", "VIA E,TARANTELLI", "08:00", "18:00");
         }
 
         private void btn_Libri_Click(object sender, RoutedEventArgs e)
         {
-            WindowLibro wl = new WindowLibro();
+            WindowLibro wl = new WindowLibro(Biblioteca B);
             wl.ShowDialog();
         }
 
         private void btn_Biblioteca_Click(object sender, RoutedEventArgs e)
         {
-            WindowBiblioteca wb = new WindowBiblioteca();
+            WindowBiblioteca wb = new WindowBiblioteca(Biblioteca B);
             wb.ShowDialog();
         }
     }

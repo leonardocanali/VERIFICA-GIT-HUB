@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="WindowLibro" Height="450" Width="800">
     <Grid>
-        
+        <ListBox x:Name="lst_Libri" Margin="38,53,461,53"/>
+        <TextBox x:Name="txt_Titolo" HorizontalAlignment="Left" Margin="392,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_Autore" HorizontalAlignment="Left" Margin="392,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_Data" HorizontalAlignment="Left" Margin="392,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_Editore" HorizontalAlignment="Left" Margin="608,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_pag" HorizontalAlignment="Left" Margin="608,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="TITOLO" HorizontalAlignment="Left" Margin="392,54,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="AUTORE" HorizontalAlignment="Left" Margin="392,110,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="DATA PUBBLICAZIONE" HorizontalAlignment="Left" Margin="392,173,0,0" VerticalAlignment="Top" Width="141"/>
+        <Label Content="EDITORE" HorizontalAlignment="Left" Margin="608,54,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="NUMERO PAGINE" HorizontalAlignment="Left" Margin="608,110,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_Aggiungi" Content="AGGIUNGI" HorizontalAlignment="Left" Margin="392,241,0,0" VerticalAlignment="Top" Height="29" Width="357" Click="btn_Aggiungi_Click"/>
+        <Button x:Name="btn_ReadingText" Content="READING TIME" HorizontalAlignment="Left" Margin="392,296,0,0" VerticalAlignment="Top" Height="29" Width="357" Click="btn_ReadingText_Click"/>
+        <Label x:Name="lbl_Output" Content="TEMPO DI LETTURA:" HorizontalAlignment="Left" Margin="392,330,0,0" VerticalAlignment="Top" Width="218"/>
+
     </Grid>
 </Window>
