@@ -21,9 +21,10 @@ namespace Biblioteca
             _libri = new List<Libro>();
         }
 
-        public void AggiungiLibro(Libro l)
+        public List<Libro> AggiungiLibro(Libro l)
         {
             _libri.Add(l);
+            return _libri;
         }
 
         public Libro RicercaLibro(string titolo)
