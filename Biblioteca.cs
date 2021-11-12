@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Biblioteca
 {
-    public class Biblioteca
+    class Biblioteca
     {
         private string _nome;
         private string _indirizzo;
