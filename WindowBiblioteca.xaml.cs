@@ -27,13 +27,13 @@ namespace Biblioteca
 
         private void btn_RicercaPerTirolo_Click(object sender, RoutedEventArgs e)
         {
-            Libro libroDaCercare = RicercaPerTitolo(txt.Ricerca.Text);
+            Libro libroDaCercare = biblioteca.RicercaLibro(txt_Ricerca.Text);
             lst_Ricerche.Items.Add(libroDaCercare);
         }
 
         private void btn_RicercaPerAutore_Click(object sender, RoutedEventArgs e)
         {
-            libri = RicercaPerAutore(txt_ricercaAutore.Text);
+            libri = biblioteca.RicercaLibriPerAutore(txt_ricercaAutore.Text);
             foreach(Libro l in libri)
             {
                 lst_Ricerche.Items.Add(l);

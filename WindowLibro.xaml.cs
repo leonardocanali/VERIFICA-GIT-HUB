@@ -45,7 +45,7 @@ namespace Biblioteca
         private void btn_ReadingText_Click(object sender, RoutedEventArgs e)
         {
             Libro l = lst_Libri.SelectedItem as Libro;
-            string tempoLettura = biblioteca.ReadingTime(l);
+            string tempoLettura = l.ReadingTime(l);
             lbl_Output.Content = " " + tempoLettura;
         }
     }
