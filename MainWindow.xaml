@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button x:Name="btn_Libri" Content="GESTIONE LIBRI" HorizontalAlignment="Left" Margin="59,75,0,0" VerticalAlignment="Top" Height="61" Width="258" Click="btn_Libri_Click"/>
+        <Button x:Name="btn_Biblioteca" Content="GESTIONE BIBLIOTECA" HorizontalAlignment="Left" Margin="441,75,0,0" VerticalAlignment="Top" Height="61" Width="258" Click="btn_Biblioteca_Click"/>
 
     </Grid>
 </Window>

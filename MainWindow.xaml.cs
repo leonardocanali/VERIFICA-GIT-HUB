@@ -24,5 +24,17 @@ namespace Biblioteca
         {
             InitializeComponent();
         }
+
+        private void btn_Libri_Click(object sender, RoutedEventArgs e)
+        {
+            WindowLibro wl = new WindowLibro();
+            wl.ShowDialog();
+        }
+
+        private void btn_Biblioteca_Click(object sender, RoutedEventArgs e)
+        {
+            WindowBiblioteca wb = new WindowBiblioteca();
+            wb.ShowDialog();
+        }
     }
 }
