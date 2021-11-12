@@ -72,5 +72,22 @@ namespace Biblioteca
             Pagine = nPag;
         }
 
+        public override string ToString()
+        {
+            return Autore + "\r" + Titolo + "\r" + DataPubblicazione + "\r" + Editore + "\r" + Pagine + "\r";
+        }
+
+        public string ReadingTime(Libro l)
+        {
+            string tempoLettura;
+            if (l.Pagine <= 100)
+                tempoLettura = "1h";
+            else if (l.Pagine > 100 && l.Pagine <= 200)
+                tempoLettura = "2h";
+            else
+                tempoLettura = "+2h";
+
+            return tempoLettura;
+        }
     }
 }
